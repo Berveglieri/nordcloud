@@ -9,8 +9,11 @@ data "aws_ami" "amz_linux" {
 }
 
 resource "aws_launch_configuration" "config" {
+  name = var.name
   image_id = data.aws_ami.amz_linux.id
   instance_type = var.instance
+
+  iam_instance_profile = var.iam_instance_profile
 
   lifecycle {
     create_before_destroy = true

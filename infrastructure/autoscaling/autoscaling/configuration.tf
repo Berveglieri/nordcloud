@@ -8,6 +8,9 @@ locals {
   cfg = local.workspaces[terraform.workspace]
 
   name = local.cfg["name"]
-  instance = local.cfg["instance"]
+  max_size = local.cfg["max_size"]
+  min_size = local.cfg["min_size"]
+  desired_capacity = local.cfg["desired_capacity"]
+  health_check_type = local.cfg["health_check_type"]
 
 }

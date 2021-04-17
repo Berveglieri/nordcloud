@@ -6,7 +6,7 @@ elbs = {
         {
           healthy_threshold = 2
           interval = 30
-          target = "HTTP:5000/"
+          target = "TCP:22"
           timeout = 3
           unhealthy_threshold = 4
         }

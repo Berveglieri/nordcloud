@@ -52,3 +52,8 @@ variable "elbs" {
   description = "Map, holding configuration of all elbs"
   type = map(any)
 }
+
+variable "autoscaling" {
+  description = "Map, holding configuration of all autoscaling groups"
+  type = map(any)
+}
