@@ -7,10 +7,6 @@ module "elb_app" {
 
   configuration = var.elbs["elb"]
   security_groups = [module.default-sg.security_group_id]
-//  subnets = toset(local.subnet_set)
-  subnets = toset(["subnet-03e1f27e1259470cd"])
-}
+  subnets = toset(local.subnet_set)
 
-output "subnet_set_id" {
-  value = local.subnet_set
 }

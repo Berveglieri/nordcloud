@@ -9,7 +9,7 @@ security_groups = {
         from_port = 22
         protocol = "tcp"
         to_port = 22
-        cidr_blocks = ["31.18.88.155/32"]
+        cidr_blocks = ["31.18.88.155/32", "10.0.0.0/16"]
       },
       {
         description = "allow http"
