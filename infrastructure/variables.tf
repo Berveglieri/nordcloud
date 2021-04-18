@@ -57,3 +57,13 @@ variable "autoscaling" {
   description = "Map, holding configuration of all autoscaling groups"
   type = map(any)
 }
+
+variable "code_deploy_app" {
+  description = "Map, holding configuration of all codedeploy apps"
+  type = map(any)
+}
+
+variable "code_deploy_groups" {
+  description = "Map, holding configuration of all codedeploy groups"
+  type = map(any)
+}
