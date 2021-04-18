@@ -15,6 +15,8 @@ if the still do not exist, therefore you need you first create the VPC, and the 
 
 Run:
 
+**terraform workspace new production**
+
 **terraform apply -target=module.main_vpc -target=module.public_application_subnet -target=module.private_database_subnet**
 
 after the creation is complete you can just run
