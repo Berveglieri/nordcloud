@@ -7,7 +7,7 @@ In the pre-init folder there are binaries for the most common operating systems.
 You can execute them to create the bucket, and the dynamodb table.
 This is a CLI tool, if executed without any parameters the usage function will the called.
 
-Please export the environment variable AWS_DEFAULT_REGION before executing it.
+Please export the environment variable AWS_REGION before executing it.
 
 After creating the s3 bucket, and the dynamodb table you need to run terraform in  a specific order.
 As the subnets are not hardcoded, terraform can't link the IDs with the other resources
